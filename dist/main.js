@@ -122,7 +122,7 @@ function EventInit() {
 			e.preventDefault();
 			var _colorThreshold = document.getElementById('colorThreshold').value;
 			//alert("add"+_colorThreshold);
-			if (parseInt(_colorThreshold, 10) =< 442) _colorThreshold = parseInt(_colorThreshold, 10) + 1;
+			_colorThreshold = parseInt(_colorThreshold, 10);
 		}
 		//reduce colorThreshold
 		if (e.keyCode == 83) {
@@ -131,7 +131,7 @@ function EventInit() {
 			e.preventDefault();
 			var _colorThreshold2 = document.getElementById('colorThreshold').value;
 			//alert("add"+_colorThreshold2);
-			if (parseInt(_colorThreshold2, 10) >= 0) _colorThreshold2 = parseInt(_colorThreshold2, 10) - 1;
+			_colorThreshold2 = parseInt(_colorThreshold2, 10);
 		}
 	};
 }
